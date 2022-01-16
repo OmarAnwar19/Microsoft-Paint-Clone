@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    font-family: "Poppins";
+    color: white;
+    text-align: center;
+}
+
+h1 {
+    background: linear-gradient(to right, #c0c0c0, white, #c0c0c0);
+   
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    
+    font-size: 25px;
+}
+
+.container {
+    height: 100%;
+    display: flex;
+}
+
+#toolbar {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    width: 100px;
+    background-color: gray;
+}
+
+#toolbar * {
+    margin-bottom: 6px;
+}
+
+#toolbar label {
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+#toolbar input {
+    width: 100%;
+}
+
+.color {
+    background-color: white;
+}
+
+#toolbar button {
+    background-color: #c0c0c0;
+    border: none;
+    border-radius: 4px;
+    color:#2b2b2b;
+    margin-top: 10px;
+    padding: 5px;
+    box-shadow: 3px 3px;
+}
+
+#toolbar button:hover {
+    background-color: #dbdcd6;
+    cursor: pointer;
+    color: #2b2b2b;
+}
+
+input[type="color"] {
+	-webkit-appearance: none;
+	border: none;
+    height: 20px;
+}
+input[type="color"]::-webkit-color-swatch-wrapper {
+	padding: 0;
+}
+input[type="color"]::-webkit-color-swatch {
+	border: none;
+}
+
+.drawing-board {
+    cursor: crosshair;
+    background-size: 100%;
+}
